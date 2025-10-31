@@ -20,7 +20,8 @@ public class mailCollect : MonoBehaviour
     {
         if(other.CompareTag("mail"))
         {
-            Destroy(gameObject);
+            mailMan.mail += 1;
+            Destroy(other.gameObject);
 
         }
     }
