@@ -40,7 +40,7 @@ public class walk : MonoBehaviour
     }
 
 
-
+    //lets the walls and anything tagged "outoffbounds" be unable to pass through
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "outoffbounds")
