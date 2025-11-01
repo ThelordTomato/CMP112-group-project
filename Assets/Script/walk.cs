@@ -19,7 +19,10 @@ public class walk : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = movementInput * moveSpeed;
+
+    
     }
+
     public void Move(InputAction.CallbackContext context)
     {
         animator.SetBool("isWalking", true);
@@ -35,4 +38,15 @@ public class walk : MonoBehaviour
         animator.SetFloat("inputY", movementInput.y);
 
     }
+
+
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "outoffbounds")
+        {
+            rb.linearVelocity = -(rb.linearVelocity);
+        }
+    }
 }
+
