@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1ef58f85cd0704698ce57493a0e5f4, type: 3}
+  m_Name: Gaz
+  m_EditorClassIdentifier: Assembly-CSharp::npcInteract
+  npcName: Gaztave
+  profile: {fileID: 0}
+  dialogueLines:
+  - Greetings young man.
+  - Can you remember that we have a batch of letters?
+  - We've lost some of them.
+  - I supposed it was about 5 of them.
+  - Find it by sunset..
+  - or else
+  - You'll have to go home...unemployed
+  - no pressure :)
+  dialogSpeed: 0.06
+  autoProgress: 0101010101010100
+  autoProgressDelay: 1.5
