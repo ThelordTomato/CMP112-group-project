@@ -19,10 +19,7 @@ public class walk : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = movementInput * moveSpeed;
-
-    
     }
-
     public void Move(InputAction.CallbackContext context)
     {
         animator.SetBool("isWalking", true);
@@ -38,15 +35,4 @@ public class walk : MonoBehaviour
         animator.SetFloat("inputY", movementInput.y);
 
     }
-
-
-    //lets the walls and anything tagged "outoffbounds" be unable to pass through
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "outoffbounds")
-        {
-            rb.linearVelocity = -(rb.linearVelocity);
-        }
-    }
 }
-
