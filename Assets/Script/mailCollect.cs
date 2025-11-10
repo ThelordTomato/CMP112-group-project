@@ -4,23 +4,12 @@ public class mailCollect : MonoBehaviour
 { private BoxCollider2D boxCollider;
     public mailManage mailMan;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("mail"))
         {
-            mailMan.mail += 1;
+            mailMan.mail +=1 ;
             Destroy(other.gameObject);
 
         }
