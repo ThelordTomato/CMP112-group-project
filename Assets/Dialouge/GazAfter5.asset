@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683c9661dd9aa2742b5b986ecd1e0514, type: 3}
   m_Name: GazAfter5
   m_EditorClassIdentifier: 
-  npcName: Gaxtav
+  npcName: Gaztav
   profile: {fileID: -3192006157490174820, guid: a9a0bc4a7f7fa9e4786167bd6b7ccd88, type: 3}
   dialogueLines:
   - Ah.. Good job, boy
