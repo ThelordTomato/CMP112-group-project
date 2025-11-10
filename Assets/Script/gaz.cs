@@ -12,7 +12,7 @@ public class gaz : MonoBehaviour, Interactable
     public TMP_Text talkText,nameText;
     public Image profileImage;
     public GameObject mailPanel;
-    public mailManage mailMan;
+    public mailManage mailMananger;
 
 
     private int dialogueIndex;
@@ -42,7 +42,7 @@ public class gaz : MonoBehaviour, Interactable
     {
         isActiveDialogue = true;
         dialogueIndex = 0;
-        if (mailMan.mail == 0)
+        if (mailMananger.mail == 0)
         {
             nameText.SetText(gazData.npcName);
             profileImage.sprite = gazData.profile;
@@ -51,7 +51,7 @@ public class gaz : MonoBehaviour, Interactable
             StartCoroutine(TypeLine());
 
         }
-        else if (mailMan.mail >= 5)
+        else if (mailMananger.mail >= 5)
         {
             nameText.SetText(gazDatacom.npcName);
             profileImage.sprite = gazDatacom.profile;
@@ -64,11 +64,11 @@ public class gaz : MonoBehaviour, Interactable
 
         if (istyping)
         {
-            if (mailMan.mail == 0) { 
+            if (mailMananger.mail == 0) { 
             StopAllCoroutines();
             talkText.SetText(gazData.dialogueLines[dialogueIndex]);
             istyping = false; }
-            else if (mailMan.mail >= 5)
+            else if (mailMananger.mail >= 5)
             {
                 StopAllCoroutines();
                 talkText.SetText(gazDatacom.dialogueLines[dialogueIndex]);
@@ -88,7 +88,7 @@ public class gaz : MonoBehaviour, Interactable
     IEnumerator TypeLine()
     {
         istyping = true;
-        if (mailMan.mail == 0)
+        if (mailMananger.mail == 0)
         {
             talkText.SetText("");
             foreach (char letter in gazData.dialogueLines[dialogueIndex])
@@ -104,7 +104,7 @@ public class gaz : MonoBehaviour, Interactable
 
             }
         }
-        else if (mailMan.mail >= 5)
+        else if (mailMananger.mail >= 5)
         {
             talkText.SetText("");
             foreach (char letter in gazDatacom.dialogueLines[dialogueIndex])
@@ -127,7 +127,7 @@ public class gaz : MonoBehaviour, Interactable
     public void EndDialouge()
     {
             StopAllCoroutines();
-        if (mailMan.mail == 0)
+        if (mailMananger.mail == 0)
         {
             isActiveDialogue = false;
             talkText.SetText("");
@@ -135,7 +135,7 @@ public class gaz : MonoBehaviour, Interactable
             mailPanel.SetActive(true);
             return;
         }
-        else if ( mailMan.mail >= 5)
+        else if ( mailMananger.mail >= 5)
         {
             isActiveDialogue = false;
             talkText.SetText("");
