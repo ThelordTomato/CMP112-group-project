@@ -116,10 +116,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9f07c3e7897c978498f835d147efb3e3
-      internalID: 421124644
+      spriteID: c3a2f4fd106c18540800000000000000
+      internalID: 5008501971956476476
       vertices: []
       indices: 
       edges: []
@@ -138,10 +138,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 637955fc11554a64a9ea3cbb60432d6d
-      internalID: 603547171
+      spriteID: 055b4813fcb98eb60800000000000000
+      internalID: 7775636070846477648
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6a65293f113309a4699b50a3861e4c31
+    spriteID: 49e319b70690ae146b7b89c407e60f94
     internalID: 0
     vertices: []
     indices: 
@@ -162,8 +162,8 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Nobelmen-Sheet_0: 421124644
-      Nobelmen-Sheet_1: 603547171
+      Nobelmen-Sheet_0: 5008501971956476476
+      Nobelmen-Sheet_1: 7775636070846477648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
