@@ -11,6 +11,7 @@ public class GazAfterFive : MonoBehaviour
     public Image profileImage;
     public GameObject mailPanel;
     public mailManage mailMan;
+
     private int dialogueIndex;
     private bool istyping, isActiveDialogue;
 
