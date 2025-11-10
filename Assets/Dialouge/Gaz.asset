@@ -25,5 +25,5 @@ MonoBehaviour:
   - No pressure.
   - :)
   dialogSpeed: 0.04
-  autoProgress: 010101010101010100
+  autoProgress: 010101010101010101
   autoProgressDelay: 2
