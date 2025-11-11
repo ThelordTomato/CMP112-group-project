@@ -14,6 +14,7 @@ public class gaz : MonoBehaviour, Interactable
     public GameObject mailPanel;
     public mailManage mailMananger;
 
+    public bool destroy = true;
 
     private int dialogueIndex;
     private bool istyping, isActiveDialogue;
@@ -42,6 +43,7 @@ public class gaz : MonoBehaviour, Interactable
     {
         isActiveDialogue = true;
         dialogueIndex = 0;
+        destroy = false;
         if (mailMananger.mail == 0)
         {
             nameText.SetText(gazData.npcName);
